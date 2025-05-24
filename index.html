@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se a Bag Pesar</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      cursor: pointer;
+    }
+
+    .bag {
+      width: 100%;
+      height: auto;
+      transition: transform 0.6s ease;
+    }
+
+    .title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transition: transform 0.6s ease;
+      z-index: 1;
+      width: 100%;
+    }
+
+    .container:hover .bag {
+      transform: scale(1.1) rotateX(20deg);
+    }
+
+    .container:hover .title {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container" onclick="window.location.href='https://open.spotify.com/track/sua-musica'">
+    <img src="Untitled-design-82.png" alt="Bolsa" class="bag">
+    <img src="ChatGPT Image 10 de mai. de 2025, 11_55_36.png" alt="Se a Bag Pesar" class="title">
+  </div>
+</body>
+</html>
